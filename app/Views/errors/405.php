@@ -1,0 +1,1 @@
+<div class="text-center py-5 wrap"><div class="display-1 grad-text" style="font-weight:900">405</div><h2>Methode nicht erlaubt</h2><a class="btn btn-pink mt-3" href="<?= url('/') ?>">Zur Startseite</a></div>

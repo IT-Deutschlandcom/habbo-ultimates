@@ -1,0 +1,1 @@
+<div class="text-center py-5 wrap"><div class="display-1 fw-black grad-text" style="font-weight:900">404</div><h2>Seite nicht gefunden</h2><p class="text-mut">Dieser Raum existiert nicht (mehr).</p><a class="btn btn-pink" href="<?= url('/') ?>">Zur Startseite</a></div>

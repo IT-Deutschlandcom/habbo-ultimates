@@ -1,0 +1,30 @@
+# Runtime data must never be published.
+/storage/*
+!/storage/cache/
+!/storage/logs/
+!/storage/sessions/
+/storage/cache/*
+/storage/logs/*
+/storage/sessions/*
+!/storage/cache/.keep
+!/storage/logs/.keep
+!/storage/sessions/.keep
+/public/uploads/*
+!/public/uploads/.keep
+
+# Local credentials, backups and editor files.
+.env
+.env.*
+!.env.example
+*.local.php
+*.bak
+*.log
+*.sql.gz
+*.sql.zip
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/

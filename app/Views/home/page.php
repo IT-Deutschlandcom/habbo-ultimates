@@ -1,0 +1,1 @@
+<div class="wrap"><h1 class="page-title"><?= e($title) ?></h1><div class="cardx cardx-b p-4 bb"><?= $body !== '' ? render_text($body) : '<span class="text-mut">Noch kein Inhalt hinterlegt.</span>' ?></div></div>

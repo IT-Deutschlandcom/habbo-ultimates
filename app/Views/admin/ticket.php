@@ -1,0 +1,6 @@
+<a href="<?= url('/admin/tickets') ?>" class="small"><i class="bi bi-arrow-left"></i> Tickets</a>
+<h1 class="page-title mt-1">#<?= (int)$t['id'] ?> · <?= e($t['subject']) ?></h1><p class="page-sub">von <b><?= e($t['username'] ?? '?') ?></b> · <?= e($t['email']) ?> · <?= e($t['ip_address']) ?> · <span class="tag"><?= e($t['status']) ?></span></p>
+<div class="row-item align-items-start"><div><div class="bb"><?= render_text((string)$t['message']) ?></div></div></div>
+<?php foreach ($replies as $r): ?><div class="row-item align-items-start" style="border-color:rgba(255,95,168,.35)"><div><b><?= e($r['username']) ?></b> <small class="text-mut"><?= ago((int)$r['timestamp']) ?></small><div class="bb"><?= render_text((string)$r['message']) ?></div></div></div><?php endforeach; ?>
+<form method="post" action="<?= url('/admin/tickets/' . (int)$t['id']) ?>" class="cardx cardx-b mt-3"><?= csrf_field() ?><textarea class="form-control mb-2" name="message" rows="4" placeholder="Antwort…"></textarea>
+<div class="d-flex gap-2"><select class="form-select w-auto" name="status"><?php foreach (['wait_reply' => 'Wartet auf Nutzer', 'in_treatment' => 'In Bearbeitung', 'open' => 'Offen', 'closed' => 'Schließen'] as $k => $l): ?><option value="<?= $k ?>"><?= $l ?></option><?php endforeach; ?></select><button class="btn btn-pink">Senden</button></div></form>

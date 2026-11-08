@@ -1,0 +1,3 @@
+<h1 class="page-title">News-Kommentare</h1>
+<?php foreach ($rows as $r): ?><div class="row-item <?= $r['hidden'] ? 'opacity-50' : '' ?>"><div class="flex-grow-1"><b><?= e($r['username']) ?></b> zu <i><?= e($r['news']) ?></i> <small class="text-mut"><?= ago((int)$r['timestamp']) ?></small><div><?= e($r['message']) ?></div></div>
+<form method="post" action="<?= url('/admin/comments/' . (int)$r['id'] . '/toggle') ?>"><?= csrf_field() ?><button class="btn btn-sm btn-dark2"><?= $r['hidden'] ? 'Einblenden' : 'Ausblenden' ?></button></form></div><?php endforeach; if (!$rows): ?><p class="text-mut">Keine Kommentare.</p><?php endif; ?>

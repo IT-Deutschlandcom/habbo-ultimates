@@ -1,0 +1,1 @@
+<div class="text-center cardx cardx-b p-5 auth-card wide"><img src="<?= asset('img/logo.png') ?>" style="max-width:100%;height:120px;object-fit:contain" alt=""><h2 class="mt-3">Wartungsarbeiten</h2><p class="text-mut">Wir sind gleich wieder für dich da. Die Kirschblüten werden gerade frisch gepflanzt 🌸</p><a class="btn btn-dark2" href="<?= url('/login') ?>">Team-Login</a></div>

@@ -1,0 +1,32 @@
+Development sources and bundled dependencies
+
+Jan-d / Cosmic:
+https://github.com/SayaFly/Jan-d
+Basis for the sanitized database structure and selected seed content.
+No license file was found in that source checkout. This notice does not
+grant rights to its third-party content.
+
+Ares backend:
+https://github.com/Domexx/ares-habbo-backend
+Functional reference for the PHP integration.
+Upstream MIT license: ares-backend-MIT.txt.
+
+Ares frontends:
+https://github.com/Domexx/ares-habbo-frontend
+https://github.com/necm1/ares-habbo-frontend
+Functional and visual references; selected image assets are bundled locally.
+Upstream GPL v3 text: ../public/assets/img/ares/LICENSE.
+Detailed provenance for the necm1 assets: ../public/assets/img/ares/NOTICE.txt.
+
+Bootstrap 5.3.3 and Bootstrap Icons 1.11.3:
+MIT notices are preserved alongside each library in public/assets/vendor/.
+
+Inter:
+SIL Open Font License is preserved at public/assets/fonts/OFL.txt.
+
+Habbo artwork and trademarks may have separate rights held by Sulake or
+other respective owners. The bundled software licenses do not replace
+those rights. The application is not affiliated with Sulake.
+
+This repository contains the PHP application source and local assets, not
+the upstream repositories, original user database or source credentials.

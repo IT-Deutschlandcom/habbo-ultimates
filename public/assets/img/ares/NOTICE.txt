@@ -1,0 +1,17 @@
+Ares frontend assets
+Source: https://github.com/necm1/ares-habbo-frontend
+Branch: develop
+Commit: 61370212bf8f5688173ef680909f194c00905865
+
+sprites.png: unchanged copy of src/assets/images/sprites.png
+room.png: unchanged copy of src/assets/images/rooms/default.png
+avatar-placeholder.png: mannequin crop from sprites.png (0, 69, 32, 82)
+icons/dashboard.png, icons/news.png, icons/employees.png, icons/settings.png,
+icons/logout.png: unchanged copies of src/assets/images/icons/sidebar/*.png
+The source repository includes GNU GPL version 3; its full license is
+preserved alongside these files as LICENSE.
+
+PHP templates adapt the sidebar grouping, split login and dashboard layout.
+Sprite crops are defined separately in app/helpers.php; the atlas is unmodified.
+Credit: Ares frontend contributors. Habbo artwork and trademarks may have
+separate third-party rights; this notice does not grant those rights.

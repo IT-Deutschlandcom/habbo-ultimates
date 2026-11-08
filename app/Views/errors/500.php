@@ -1,0 +1,1 @@
+<div class="text-center cardx cardx-b p-5 auth-card"><div class="display-3 grad-text" style="font-weight:900">500</div><h3>Etwas ist schiefgelaufen</h3><p class="text-mut">Wir kümmern uns darum. Bitte versuche es später erneut.</p><a class="btn btn-pink" href="/">Zur Startseite</a></div>

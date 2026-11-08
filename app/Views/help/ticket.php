@@ -1,0 +1,6 @@
+<div class="wrap"><a href="<?= url('/help/tickets') ?>" class="small"><i class="bi bi-arrow-left"></i> Tickets</a>
+  <h1 class="page-title mt-1">#<?= (int)$t['id'] ?> · <?= e($t['subject']) ?></h1><span class="tag <?= $t['status'] === 'closed' ? 'gray' : 'green' ?>"><?= e($t['status']) ?></span>
+  <div class="row-item mt-3 align-items-start"><i class="bi bi-person-circle fs-4"></i><div><b>Du</b> <small class="text-mut"><?= ago((int)$t['timestamp']) ?></small><div class="bb"><?= render_text((string)$t['message']) ?></div></div></div>
+  <?php foreach ($replies as $r): ?><div class="row-item align-items-start" style="border-color:rgba(255,95,168,.35)"><i class="bi bi-shield-check fs-4" style="color:var(--pink)"></i><div><b><?= e($r['username']) ?></b> <span class="tag">Team</span> <small class="text-mut"><?= ago((int)$r['timestamp']) ?></small><div class="bb"><?= render_text((string)$r['message']) ?></div></div></div><?php endforeach; ?>
+  <?php if ($t['status'] !== 'closed'): ?><form method="post" action="<?= url('/help/tickets/' . (int)$t['id'] . '/reply') ?>" class="mt-3"><?= csrf_field() ?><textarea class="form-control mb-2" name="message" rows="4" required placeholder="Antwort…"></textarea><button class="btn btn-pink">Antworten</button></form><?php endif; ?>
+</div>

@@ -1,0 +1,1 @@
+<div class="text-center py-5 wrap"><div class="display-1 grad-text" style="font-weight:900">403</div><h2>Kein Zugriff</h2><p class="text-mut">Dafür fehlen dir die Berechtigungen.</p><a class="btn btn-pink" href="<?= url('/') ?>">Zur Startseite</a></div>

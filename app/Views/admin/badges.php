@@ -1,0 +1,3 @@
+<h1 class="page-title">Badge-Anfragen</h1>
+<?php foreach ($rows as $r): ?><div class="row-item"><b><?= e($r['username']) ?></b><span class="flex-grow-1 text-mut text-truncate"><?= e($r['badge_imaging']) ?></span><span class="tag"><?= e($r['status']) ?></span>
+<?php if (in_array($r['status'], ['open', 'pending', '0'], true)): ?><form method="post" class="d-inline-flex gap-1"><?= csrf_field() ?><button class="btn btn-sm btn-pink" formaction="<?= url('/admin/badges/' . (int)$r['id'] . '/accept') ?>">Annehmen</button><button class="btn btn-sm btn-ghost-danger" formaction="<?= url('/admin/badges/' . (int)$r['id'] . '/decline') ?>">Ablehnen</button></form><?php endif; ?></div><?php endforeach; if (!$rows): ?><p class="text-mut">Keine Anfragen.</p><?php endif; ?>
